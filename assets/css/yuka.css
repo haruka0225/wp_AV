@@ -1,0 +1,54 @@
+body {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.Latest h1 {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 30px;
+}
+
+.Latest-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+.Latest-box .box {
+  transition: all 0.3s;
+}
+.Latest-box .box .box-text {
+  margin: 5px 15px 30px;
+}
+.Latest-box .box .box-text p {
+  margin: 5px auto 0;
+}
+.Latest-box .box .box-text a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-top: 100px;
+  text-align: end;
+}
+.Latest-box .box .box-text a span {
+  text-decoration: underline;
+  text-underline-offset: 1.5ex;
+  padding-bottom: 1px;
+}
+
+.Latest-box .box:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
+  border-color: transparent;
+}
+
+.footer {
+  margin-top: 150px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.footer p {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=yuka.css.map */
