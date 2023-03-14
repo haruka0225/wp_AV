@@ -39,7 +39,8 @@ li {
     justify-content: end;
 
     @include sp{
-        display: block;
+        display: none;
+
       }
 }
 
@@ -66,7 +67,7 @@ li {
     bottom: -25px;
     right: 5px;
 
-    @include mq(sp){
+    @include sp{
         position: static;
     }
       }

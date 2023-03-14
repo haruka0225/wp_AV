@@ -35,7 +35,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .logo1 {
-    padding: 10px;
+    position: static;
   }
 }
 
@@ -46,7 +46,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .logo2 {
-    padding: 10px;
+    position: static;
   }
 }
 
