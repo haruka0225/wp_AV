@@ -103,9 +103,13 @@ li {
   visibility: visible;
 }
 
+.Latest {
+  margin: 25px auto;
+}
+
 .Latest h1 {
   text-align: center;
-  margin: 50px auto;
+  margin: 0px 25px;
   font-size: 30px;
 }
 
