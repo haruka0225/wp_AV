@@ -48,6 +48,15 @@ li {
 }
 @media screen and (max-width: 767px) {
   .logo2 {
+    position: static;
+  }
+}
+
+.pic {
+  margin-left: 50px;
+}
+@media screen and (max-width: 767px) {
+  .pic {
     width: 50%;
     top: 280px;
     right: 290px;
@@ -118,11 +127,6 @@ li {
   visibility: visible;
 }
 
-<<<<<<< HEAD
-.Latest {
-  width: 90%;
-}
-=======
 .burgar {
   display: none;
 }
@@ -132,7 +136,9 @@ li {
   }
 }
 
->>>>>>> f815aa0b571aabcc7b4f11d81d296399aad888d6
+.Latest {
+  width: 90%;
+}
 .Latest h1 {
   text-align: center;
   font-size: 30px;
