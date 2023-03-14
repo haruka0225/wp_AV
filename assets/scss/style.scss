@@ -24,6 +24,10 @@ $sp: 767px;
 // レスポンシブ設定対応ここまで
 
 
+header{
+    height: 50px;
+    position: relative;
+}
 
 li {
     list-style: none;
@@ -62,6 +66,7 @@ li {
     @include sp {
         position: static;
         margin-left: 20px;
+        
     }
 }
 
@@ -100,12 +105,15 @@ p {
 
 .nav_toggle {
     display: block;
-    position: relative;
+    position: absolute;
     width: 1.75rem;
     height: 1.5rem;
-    top: 0;
-    right: 20px;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+   
 }
+
 
 .nav_toggle i {
     display: block;
@@ -154,7 +162,7 @@ p {
     @include sp {
         display: block;
         text-align: right;
-        
+        width: 100%;
     }
 }
 
