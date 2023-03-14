@@ -5,6 +5,11 @@
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+header {
+  height: 50px;
+  position: relative;
+}
+
 li {
   list-style: none;
   padding: 20px;
@@ -72,11 +77,12 @@ li {
 
 .nav_toggle {
   display: block;
-  position: relative;
+  position: absolute;
   width: 1.75rem;
   height: 1.5rem;
-  top: 0;
-  right: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
 }
 
 .nav_toggle i {
@@ -112,6 +118,7 @@ li {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s;
+  text-align: center;
 }
 
 .nav.show {
@@ -125,6 +132,8 @@ li {
 @media screen and (max-width: 767px) {
   .burgar {
     display: block;
+    text-align: right;
+    width: 100%;
   }
 }
 
