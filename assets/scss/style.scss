@@ -1,6 +1,6 @@
 * {
     max-width: 1152px;
-    //  margin: 0 auto;
+    margin: 0 auto;
     //  text-align: center;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
@@ -31,7 +31,8 @@ li {
 }
 
 .head-right {
-    display: flex;
+  display: flex;
+  margin: 0;
 }
 
 .container {
@@ -123,6 +124,63 @@ li {
     }
 
 // ハンバーガーここまで
+
+
+
+// ===== Latest Articles ===============
+.Latest h1{
+  text-align: center;
+  margin: 50px auto;
+  font-size: 30px;
+}
+.Latest-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  .box{
+    transition: all .3s;
+    .box-text{
+      margin: 5px 15px 30px;
+      p{
+        margin: 5px auto 0;
+      }
+      a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-top: 100px;
+        text-align: end;
+        span{
+          text-decoration: underline;
+          text-underline-offset: 1.5ex;
+          padding-bottom: 1px;
+        }      
+      }
+    }
+  }
+    // a:hover{
+    //   text-decoration: underline;
+    // }
+  }
+
+.Latest-box .box:hover{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1) ;
+  border-color: transparent;
+}
+
+// ===== フッター ===============
+.footer{
+  margin-top: 150px;
+  text-align: center;
+  background-color: black;
+  // height: 70px;
+  color: white;
+  p{
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 
 
 
