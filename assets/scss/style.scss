@@ -40,9 +40,15 @@ li {
   display: flex;
   justify-content: end;
 
+<<<<<<< HEAD
   @include sp {
     display: block;
   }
+=======
+    @include sp{
+        display: none;
+      }
+>>>>>>> f815aa0b571aabcc7b4f11d81d296399aad888d6
 }
 
 .box {
@@ -68,6 +74,7 @@ li {
   bottom: -25px;
   right: 5px;
 
+<<<<<<< HEAD
   @include sp {
     position: static;
   }
@@ -75,10 +82,32 @@ li {
 
 .pic {
   margin-left: 50px;
+=======
+    @include sp{
+        width: 50%;
+        top: 280px;
+        right: 290px;
+    }
+      }
+
+.pic {
+    margin-left: 50px;
+    @include sp{
+        margin: 0 auto;
+      
+    }
+}
+
+p {
+    @include sp{
+    text-align: center;
+}
+>>>>>>> f815aa0b571aabcc7b4f11d81d296399aad888d6
 }
 
 
 // ハンバーガー線ここから
+<<<<<<< HEAD
 
 .nav_toggle {
   display: block;
@@ -126,6 +155,61 @@ li {
   opacity: 1;
   visibility: visible;
 }
+=======
+ 
+  .nav_toggle {
+      display: block;
+      position: relative;
+      width: 1.75rem;
+      height: 1.5rem;
+      top: 0;
+      right: 20px;
+    }
+    .nav_toggle i {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: red;
+      position: absolute;
+      transition: transform .5s, opacity .5s;
+    }
+    .nav_toggle i:nth-child(1) {
+      top: 0;
+    }
+    .nav_toggle i:nth-child(2) {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .nav_toggle i:nth-child(3) {
+      bottom: 0;
+    }
+    
+    .nav {
+      position: fixed;
+      top: 3rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .5s, visibility .5s;
+    }
+  
+    .nav.show {
+      opacity: 1;
+      visibility: visible;
+    }
+>>>>>>> f815aa0b571aabcc7b4f11d81d296399aad888d6
+
+    .burgar{
+        display: none;
+         @include sp{
+        display: block;
+         }
+    }
+
 
 // ハンバーガーここまで
 

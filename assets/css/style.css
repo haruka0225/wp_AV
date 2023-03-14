@@ -21,7 +21,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .container {
-    display: block;
+    display: none;
   }
 }
 
@@ -48,12 +48,25 @@ li {
 }
 @media screen and (max-width: 767px) {
   .logo2 {
-    position: static;
+    width: 50%;
+    top: 280px;
+    right: 290px;
   }
 }
 
 .pic {
   margin-left: 50px;
+}
+@media screen and (max-width: 767px) {
+  .pic {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    text-align: center;
+  }
 }
 
 .nav_toggle {
@@ -61,13 +74,15 @@ li {
   position: relative;
   width: 1.75rem;
   height: 1.5rem;
+  top: 0;
+  right: 20px;
 }
 
 .nav_toggle i {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: red;
   position: absolute;
   transition: transform 0.5s, opacity 0.5s;
 }
@@ -103,9 +118,21 @@ li {
   visibility: visible;
 }
 
+<<<<<<< HEAD
 .Latest {
   width: 90%;
 }
+=======
+.burgar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .burgar {
+    display: block;
+  }
+}
+
+>>>>>>> f815aa0b571aabcc7b4f11d81d296399aad888d6
 .Latest h1 {
   text-align: center;
   font-size: 30px;
