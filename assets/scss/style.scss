@@ -175,11 +175,11 @@ p {
 .Latest-box {
     display: flex;
     justify-content: space-between;
-    margin: 30px auto;
+    margin: 30px 0px;
 
-    // column-gap: 5%;
-    .box {
+    .box1 {
         transition: all .3s;
+        width: 300px;
 
         .box-text {
             margin: 5px 15px 30px;
@@ -203,10 +203,6 @@ p {
             }
         }
     }
-
-    // a:hover{
-    //   text-decoration: underline;
-    // }
 }
 
 .Latest-box .box:hover {

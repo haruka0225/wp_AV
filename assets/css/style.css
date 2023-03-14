@@ -140,25 +140,26 @@ li {
 .Latest-box {
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 30px 0px;
 }
-.Latest-box .box {
+.Latest-box .box1 {
   transition: all 0.3s;
+  width: 300px;
 }
-.Latest-box .box .box-text {
+.Latest-box .box1 .box-text {
   margin: 5px 15px 30px;
 }
-.Latest-box .box .box-text p {
+.Latest-box .box1 .box-text p {
   margin: 5px auto 0;
 }
-.Latest-box .box .box-text a {
+.Latest-box .box1 .box-text a {
   display: block;
   text-decoration: none;
   color: black;
   margin-top: 100px;
   text-align: end;
 }
-.Latest-box .box .box-text a span {
+.Latest-box .box1 .box-text a span {
   text-decoration: underline;
   text-underline-offset: 1.5ex;
   padding-bottom: 1px;

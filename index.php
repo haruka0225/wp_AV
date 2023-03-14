@@ -22,7 +22,7 @@
           the_post();
       ?>
           <div class="Latest-box">
-            <div class="box">
+            <div class="box1">
               <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="post-img">
               <div class="box-text">
                 <h3><?php the_title(); ?></h3>
