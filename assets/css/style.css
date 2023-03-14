@@ -1,5 +1,7 @@
+@charset "UTF-8";
 * {
   max-width: 1152px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 li {
@@ -15,6 +17,11 @@ li {
   display: flex;
   justify-content: end;
 }
+@media screen and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+}
 
 .box {
   position: relative;
@@ -26,13 +33,70 @@ li {
   top: -60px;
   left: 15px;
 }
+@media screen and (max-width: 767px) {
+  .logo1 {
+    padding: 10px;
+  }
+}
 
 .logo2 {
   position: absolute;
   bottom: -25px;
   right: 5px;
 }
+@media screen and (max-width: 767px) {
+  .logo2 {
+    padding: 10px;
+  }
+}
 
 .pic {
   margin-left: 50px;
+}
+
+.nav_toggle {
+  display: block;
+  position: relative;
+  width: 1.75rem;
+  height: 1.5rem;
+}
+
+.nav_toggle i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.nav_toggle i:nth-child(1) {
+  top: 0;
+}
+
+.nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.nav.show {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
