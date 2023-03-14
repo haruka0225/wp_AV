@@ -41,7 +41,6 @@ li {
 
     @include sp{
         display: none;
-
       }
 }
 
@@ -69,12 +68,24 @@ li {
     right: 5px;
 
     @include sp{
-        position: static;
+        width: 50%;
+        top: 280px;
+        right: 290px;
     }
       }
 
 .pic {
     margin-left: 50px;
+    @include sp{
+        margin: 0 auto;
+      
+    }
+}
+
+p {
+    @include sp{
+    text-align: center;
+}
 }
 
 
@@ -85,12 +96,14 @@ li {
       position: relative;
       width: 1.75rem;
       height: 1.5rem;
+      top: 0;
+      right: 20px;
     }
     .nav_toggle i {
       display: block;
       width: 100%;
       height: 2px;
-      background-color: #333;
+      background-color: red;
       position: absolute;
       transition: transform .5s, opacity .5s;
     }
@@ -122,6 +135,14 @@ li {
       opacity: 1;
       visibility: visible;
     }
+
+    .burgar{
+        display: none;
+         @include sp{
+        display: block;
+         }
+    }
+
 
 // ハンバーガーここまで
 
