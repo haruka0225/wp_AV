@@ -8,10 +8,10 @@
  */
 
 * {
-  max-width: 1152px;
-  margin: 0 auto;
-  //  text-align: center;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    max-width: 1152px;
+    margin: 0 auto;
+    //  text-align: center;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 // レスポンシブ設定対応
@@ -19,15 +19,15 @@ $pc: 1152px;
 $sp: 767px;
 
 @mixin pc {
-  @media screen and (max-width: ($pc)) {
-    @content;
-  }
+    @media screen and (max-width: ($pc)) {
+        @content;
+    }
 }
 
 @mixin sp {
-  @media screen and (max-width: ($sp)) {
-    @content;
-  }
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
 }
 
 // レスポンシブ設定対応ここまで
@@ -35,136 +35,135 @@ $sp: 767px;
 
 
 li {
-  list-style: none;
-  padding: 20px;
+    list-style: none;
+    padding: 20px;
 
 }
 
 .head-right {
-  display: flex;
-  margin: 0;
+    display: flex;
+    margin: 0;
 }
 
 .container {
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 
 
-    @include sp{
+    @include sp {
         display: none;
-      }
+    }
 
 }
 
 .box {
 
-  position: relative;
-  margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
 }
 
 
 .logo1 {
-  position: absolute;
-  top: -60px;
-  left: 15px;
+    position: absolute;
+    top: -60px;
+    left: 15px;
 
-  @include sp {
-    position: static;
-  }
+    @include sp {
+        position: static;
+        margin-left: 20px;
+    }
 }
 
 
 .logo2 {
-  position: absolute;
-  bottom: -25px;
-  right: 5px;
+    position: absolute;
+    bottom: -25px;
+    right: 5px;
 
 
-  @include sp {
-    position: static;
-  }
-}
-
-.pic {
-  margin-left: 50px;
-
-    @include sp{
+    @include sp {
         width: 50%;
         top: 280px;
         right: 290px;
     }
-      }
+}
 
 .pic {
     margin-left: 50px;
-    @include sp{
-        margin: 0 auto;
-      
+
+    @include sp {
+        margin: 0;
     }
 }
 
+
 p {
-    @include sp{
-    text-align: center;
-}
+    @include sp {
+        text-align: center;
+    }
 
 }
 
 
 // ハンバーガー線ここから
- 
-  .nav_toggle {
-      display: block;
-      position: relative;
-      width: 1.75rem;
-      height: 1.5rem;
-      top: 0;
-      right: 20px;
-    }
-    .nav_toggle i {
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: red;
-      position: absolute;
-      transition: transform .5s, opacity .5s;
-    }
-    .nav_toggle i:nth-child(1) {
-      top: 0;
-    }
-    .nav_toggle i:nth-child(2) {
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-    .nav_toggle i:nth-child(3) {
-      bottom: 0;
-    }
-    
-    .nav {
-      position: fixed;
-      top: 3rem;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 1rem;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity .5s, visibility .5s;
-    }
-  
-    .nav.show {
-      opacity: 1;
-      visibility: visible;
-    }
+
+.nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    top: 0;
+    right: 20px;
+}
+
+.nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+
+.nav_toggle i:nth-child(1) {
+    top: 0;
+}
+
+.nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
+
+.nav {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+
+.nav.show {
+    opacity: 1;
+    visibility: visible;
+}
 
 
-    .burgar{
-        display: none;
-         @include sp{
+.burgar {
+    display: none;
+
+    @include sp {
         display: block;
-         }
     }
+}
 
 
 // ハンバーガーここまで
@@ -173,59 +172,66 @@ p {
 
 // ===== Latest Articles ===============
 .Latest {
-  width: 90%;
-  h1 {
-    text-align: center;
-    font-size: 30px;
-    margin: 30px auto;
-  }
+    width: 90%;
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        margin: 30px auto;
+    }
 }
 
 .Latest-box {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px auto;
-  // column-gap: 5%;
-  .box {
-    transition: all .3s;
-    .box-text {
-      margin: 5px 15px 30px;
-      p {
-        margin: 5px auto 0;
-      }
-      a {
-        display: block;
-        text-decoration: none;
-        color: black;
-        margin-top: 100px;
-        text-align: end;
-        span {
-          text-decoration: underline;
-          text-underline-offset: 1.5ex;
-          padding-bottom: 1px;
-        }
-      }
-    }
-  }
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
 
-  // a:hover{
-  //   text-decoration: underline;
-  // }
+    // column-gap: 5%;
+    .box {
+        transition: all .3s;
+
+        .box-text {
+            margin: 5px 15px 30px;
+
+            p {
+                margin: 5px auto 0;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                margin-top: 100px;
+                text-align: end;
+
+                span {
+                    text-decoration: underline;
+                    text-underline-offset: 1.5ex;
+                    padding-bottom: 1px;
+                }
+            }
+        }
+    }
+
+    // a:hover{
+    //   text-decoration: underline;
+    // }
 }
 
 .Latest-box .box:hover {
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
-  border-color: transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
+    border-color: transparent;
 }
 
 // ===== フッター ===============
 .footer {
-  margin-top: 150px;
-  text-align: center;
-  background-color: black;
-  color: white;
-  p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+    margin-top: 150px;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
