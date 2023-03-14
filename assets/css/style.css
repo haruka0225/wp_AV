@@ -38,6 +38,7 @@ li {
 @media screen and (max-width: 767px) {
   .logo1 {
     position: static;
+    margin-left: 20px;
   }
 }
 
@@ -48,15 +49,6 @@ li {
 }
 @media screen and (max-width: 767px) {
   .logo2 {
-    position: static;
-  }
-}
-
-.pic {
-  margin-left: 50px;
-}
-@media screen and (max-width: 767px) {
-  .pic {
     width: 50%;
     top: 280px;
     right: 290px;
@@ -68,7 +60,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .pic {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
