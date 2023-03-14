@@ -5,6 +5,6 @@
 <?php wp_footer(); ?> 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="./script.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/script.js"></script>
 </body>
 </html>
