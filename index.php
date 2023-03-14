@@ -23,10 +23,10 @@
       ?>
           <div class="Latest-box">
             <div class="box">
-              <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'medium');?>" alt="post-img">
+              <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="post-img">
               <div class="box-text">
+                <h3><?php the_title(); ?></h3>
                 <p><?php the_content(); ?></p>
-                <!-- <p><?php //the_content(); ?></p> -->
                 <a href="">READ MO<span>RE</span></a>
               </div>
             </div>
