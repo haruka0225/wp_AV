@@ -29,7 +29,7 @@
                 <a href="">READ MO<span>RE</span></a>
               </div>
           </div>
-<<<<<<< HEAD
+
           <?php
             endwhile;
           else :
@@ -42,21 +42,6 @@
         </div>
     </section>
   </main>
-=======
-          
-        <?php
-        endwhile;
-          else :
-        ?>
 
-        <section class="conteiner-weap" id="htmlcss">
-          <h2 class="subtitle">表示する記事がりません</h2>
-        </section>
-      <?php endif; ?>
-    </div>
-  </section>
-  <!------- メインループここまで ------->
-</main>
->>>>>>> f317142d0b25d724cb321422a1eaec6d3eded8a7
 <!-- フッター読み込み -->
 <?php get_footer(); ?>
