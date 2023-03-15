@@ -23,7 +23,7 @@
     </div>
 
     <!-- ハンバーガー線-->
-    <div class="burgar">
+ <div class="burgar">
       <span class="nav_toggle">
         <i></i>
         <i></i>
@@ -39,4 +39,5 @@
       </nav>
     </div>
     <!--  ハンバーガー線ここまで-->
+
   </header>

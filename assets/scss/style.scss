@@ -28,6 +28,11 @@ header {
     height: 100px;
     position: relative;
     z-index: 100%;
+
+
+    @include sp {
+        height: 50px;
+    }
 }
 
 li {
@@ -67,7 +72,7 @@ li {
     @include sp {
         position: static;
         margin-left: 20px;
-        
+
     }
 }
 
@@ -104,16 +109,15 @@ p {
 
 
 // ハンバーガー線ここから
-
 .nav_toggle {
     display: block;
     position: absolute;
     width: 1.75rem;
     height: 1.5rem;
     top: 50%;
-    right: 10px;
-    transform: translate(0,-50%);
-   
+    right: 0;
+    transform: translate(0, -50%);
+    z-index: 1;
 }
 
 
@@ -121,7 +125,7 @@ p {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: red;
+    background-color: black;
     position: absolute;
     transition: transform .5s, opacity .5s;
 }
@@ -156,8 +160,20 @@ p {
 .nav.show {
     opacity: 1;
     visibility: visible;
-    
 }
+
+.nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+
+.nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
 
 
 .burgar {
@@ -171,8 +187,8 @@ p {
 }
 
 
-// ハンバーガーここまで
 
+// ハンバーガーここまで
 
 
 // ===== Latest Articles ===============
