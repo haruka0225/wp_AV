@@ -21,7 +21,7 @@ $sp: 767px;
     }
 }
 
-// レスポンシブ設定対応ここまで
+// // レスポンシブ設定対応ここまで
 
 
 header {
@@ -173,6 +173,7 @@ p {
 
 
 // ===== Latest Articles ===============
+
 .Latest {
     width: 90%;
 
@@ -185,12 +186,14 @@ p {
 
 .Latest-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 30px 0px;
 
-    .box1 {
+    .box {
         transition: all .3s;
         width: 300px;
+        margin-top: 30px;
 
         .box-text {
             margin: 5px 15px 30px;
