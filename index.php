@@ -26,8 +26,8 @@
               <div class="box-text">
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_content(); ?></p>
-                <a href="">READ MORE</a>
               </div>
+              <a href="">READ MORE</a>
           </div>
           <?php
             endwhile;

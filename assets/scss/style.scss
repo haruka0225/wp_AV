@@ -196,41 +196,42 @@ p {
   .box {
     transition: all .3s;
     width: 300px;
+    height: 400px;
     margin-top: 30px;
 
     .box-text {
-      margin: 5px 15px 30px;
+      height: 120px;
+      margin: 5px 10px 30px;
 
       p {
         margin: 5px auto 0;
       }
+    }
 
-      a {
-        position: relative;
+    a {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: black;
+      text-align: end;
+      margin: 5px 10px 30px;
+
+      &::after {
+        content: '';
+        position: absolute;
         display: block;
-        text-decoration: none;
-        color: black;
-        margin-top: 100px;
-        text-align: end;
-
-        &::after {
-          content: '';
-          position: absolute;
-          display: block;
-          border-bottom: 2px solid black;
-          width: 10%;
-          height: 7px;
-          left: 90%;
-        }
-        &:hover::after{
-          border-bottom: 2px solid black;
-          width: 38%;
-          height: 7px;
-          left: 62%;
-        }
+        border-bottom: 2px solid black;
+        width: 10%;
+        height: 7px;
+        left: 90%;
       }
 
-      
+      &:hover::after {
+        border-bottom: 2px solid black;
+        width: 38%;
+        height: 7px;
+        left: 62%;
+      }
     }
   }
 }

@@ -158,23 +158,25 @@ li {
 .Latest-box .box {
   transition: all 0.3s;
   width: 300px;
+  height: 400px;
   margin-top: 30px;
 }
 .Latest-box .box .box-text {
-  margin: 5px 15px 30px;
+  height: 120px;
+  margin: 5px 10px 30px;
 }
 .Latest-box .box .box-text p {
   margin: 5px auto 0;
 }
-.Latest-box .box .box-text a {
+.Latest-box .box a {
   position: relative;
   display: block;
   text-decoration: none;
   color: black;
-  margin-top: 100px;
   text-align: end;
+  margin: 5px 10px 30px;
 }
-.Latest-box .box .box-text a::after {
+.Latest-box .box a::after {
   content: "";
   position: absolute;
   display: block;
@@ -183,7 +185,7 @@ li {
   height: 7px;
   left: 90%;
 }
-.Latest-box .box .box-text a:hover::after {
+.Latest-box .box a:hover::after {
   border-bottom: 2px solid black;
   width: 38%;
   height: 7px;
