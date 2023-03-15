@@ -31,10 +31,12 @@
               </div>
             </div>
           </div>
+          
         <?php
         endwhile;
-      else :
+          else :
         ?>
+
         <section class="conteiner-weap" id="htmlcss">
           <h2 class="subtitle">表示する記事がりません</h2>
         </section>
