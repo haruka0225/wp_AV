@@ -6,8 +6,9 @@
 }
 
 header {
-  height: 50px;
+  height: 100px;
   position: relative;
+  z-index: 100%;
 }
 
 li {
@@ -23,6 +24,7 @@ li {
 .container {
   display: flex;
   justify-content: end;
+  margin-right: 20px;
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -66,6 +68,7 @@ li {
 @media screen and (max-width: 767px) {
   .pic {
     margin: 0;
+    width: 100%;
   }
 }
 
