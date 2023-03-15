@@ -167,16 +167,27 @@ li {
   margin: 5px auto 0;
 }
 .Latest-box .box .box-text a {
+  position: relative;
   display: block;
   text-decoration: none;
   color: black;
   margin-top: 100px;
   text-align: end;
 }
-.Latest-box .box .box-text a span {
-  text-decoration: underline;
-  text-underline-offset: 1.5ex;
-  padding-bottom: 1px;
+.Latest-box .box .box-text a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid black;
+  width: 10%;
+  height: 7px;
+  left: 90%;
+}
+.Latest-box .box .box-text a:hover::after {
+  border-bottom: 2px solid black;
+  width: 38%;
+  height: 7px;
+  left: 62%;
 }
 
 .Latest-box .box:hover {
