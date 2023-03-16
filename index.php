@@ -31,10 +31,13 @@
               <div class="box-text">
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_content(); ?></p>
-                <a href="">READ MO<span>RE</span></a>
               </div>
+              <a href="">READ MORE</a>
           </div>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 1c06939f919c834458bbf5fd8e9bd7da205c18d2
           <?php
             endwhile;
           else :
@@ -47,6 +50,9 @@
         </div>
     </section>
   </main>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 1c06939f919c834458bbf5fd8e9bd7da205c18d2
 <!-- フッター読み込み -->
 <?php get_footer(); ?>
