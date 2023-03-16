@@ -12,9 +12,9 @@
           the_post();
       ?>
               <div class="box-text">
-                <h3><?php the_title(); ?></h3>
-                <p><?php the_content(); ?></p>
-                <a href="">READ MO<span>RE</span></a>
+                <p><?php the_date(); ?></p>
+                <p><?php the_title(); ?></p>
+                <a href="">READ MORE</a>
               </div>
             </div>
           </div>
