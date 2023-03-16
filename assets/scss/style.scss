@@ -1,4 +1,4 @@
-* {
+*{
   max-width: 1152px;
   margin: 0 auto;
   //  text-align: center;
@@ -216,11 +216,19 @@ p {
 
 .Latest {
   width: 1024px;
+  @include sp {
+    width: auto;
+  }
+
 
   h1 {
     text-align: center;
     font-size: 30px;
     margin: 30px auto;
+    @include sp {
+      margin: 30px auto 0px;
+    }
+
   }
 }
 
@@ -229,16 +237,25 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 30px 0px;
+  @include sp {
+    display: block;
+    margin-top: 0px;
+  }
 
   .box {
     transition: all .3s;
     width: 300px;
     height: 400px;
+    margin: 0;
     margin-top: 30px;
+    @include sp {
+      margin: 0px auto 20px;
+    }
+  
 
     .box-text {
       height: 120px;
-      margin: 5px 0px 30px;
+      margin: 5px 10px 30px;
 
       p {
         margin: 5px auto 0;
@@ -258,9 +275,9 @@ p {
         position: absolute;
         display: block;
         border-bottom: 2px solid black;
-        width: 10%;
+        width: 8%;
         height: 7px;
-        left: 90%;
+        left: 92%;
       }
 
       &:hover::after {
@@ -280,11 +297,14 @@ p {
 
 // ===== フッター ===============
 .footer {
-  max-width: initial;
+  // max-width: initial;
   margin-top: 150px;
   text-align: center;
   background-color: black;
   color: white;
+  @include sp {
+    margin-top: 10px;
+  }
 
   p {
     padding-top: 20px;

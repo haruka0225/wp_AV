@@ -14,7 +14,7 @@
               <div class="box-text">
                 <p><?php the_date(); ?></p>
                 <p><?php the_title(); ?></p>
-                <a href="">READ MORE</a>
+                <a href="#">READ MORE</a>
               </div>
             </div>
           </div>

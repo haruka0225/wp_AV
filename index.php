@@ -32,7 +32,7 @@
                 <p><?php the_date(); ?></p>
                 <p><?php the_title(); ?></p>
               </div>
-              <a href="">READ MORE</a>
+              <a href="#">READ MORE</a>
           </div>
           <?php
             endwhile;

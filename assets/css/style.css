@@ -167,12 +167,22 @@ li {
 }
 
 .Latest {
-  width: 90%;
+  width: 1024px;
+}
+@media screen and (max-width: 767px) {
+  .Latest {
+    width: auto;
+  }
 }
 .Latest h1 {
   text-align: center;
   font-size: 30px;
   margin: 30px auto;
+}
+@media screen and (max-width: 767px) {
+  .Latest h1 {
+    margin: 30px auto 0px;
+  }
 }
 
 .Latest-box {
@@ -181,11 +191,23 @@ li {
   justify-content: space-between;
   margin: 30px 0px;
 }
+@media screen and (max-width: 767px) {
+  .Latest-box {
+    display: block;
+    margin-top: 0px;
+  }
+}
 .Latest-box .box {
   transition: all 0.3s;
   width: 300px;
   height: 400px;
+  margin: 0;
   margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .Latest-box .box {
+    margin: 0px auto 20px;
+  }
 }
 .Latest-box .box .box-text {
   height: 120px;
@@ -207,9 +229,9 @@ li {
   position: absolute;
   display: block;
   border-bottom: 2px solid black;
-  width: 10%;
+  width: 8%;
   height: 7px;
-  left: 90%;
+  left: 92%;
 }
 .Latest-box .box a:hover::after {
   border-bottom: 2px solid black;
@@ -228,6 +250,11 @@ li {
   text-align: center;
   background-color: black;
   color: white;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    margin-top: 10px;
+  }
 }
 .footer p {
   padding-top: 20px;
