@@ -54,6 +54,11 @@ li {
   position: relative;
   margin: 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .box {
+    text-align: center;
+  }
+}
 
 .logo1 {
   position: absolute;
@@ -64,6 +69,7 @@ li {
   .logo1 {
     position: static;
     margin-left: 20px;
+    text-align: center;
   }
 }
 
@@ -266,11 +272,10 @@ li {
   height: 7px;
   left: 92%;
 }
-.Latest-Articles .Latest a:hover::after {
-  border-bottom: 2px solid black;
-  width: 38%;
-  height: 7px;
-  left: 62%;
+@media screen and (max-width: 767px) {
+  .Latest-Articles .Latest a {
+    width: auto;
+  }
 }
 
 .more-btn {
