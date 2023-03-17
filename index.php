@@ -9,7 +9,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_2_pc.png" alt="" class="pic">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_3_pc.png" alt="" class="pic">
       </div>
-      
+
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" alt="" class="logo2">
     </div>
 
