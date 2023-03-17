@@ -22,9 +22,11 @@ li {
 }
 @media screen and (max-width: 767px) {
   li {
+    display: block;
     font-weight: 900;
     text-decoration: none;
     margin-left: 100px;
+    position: relative;
     z-index: 1000;
   }
 }
@@ -64,6 +66,7 @@ li {
   .logo1 {
     position: static;
     margin-left: 20px;
+    text-align: center;
   }
 }
 

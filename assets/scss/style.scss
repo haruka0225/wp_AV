@@ -42,14 +42,12 @@ li {
     padding: 20px;
     
 
-
     @include sp {
-        // display: block;
+        display: block;
         font-weight: 900;
         text-decoration: none;
         margin-left: 100px;
-        // padding: 20px;
-        // position: relative;
+        position: relative;
         z-index: 1000;
 
     }
@@ -99,7 +97,8 @@ li {
     @include sp {
         position: static;
         margin-left: 20px;
-
+text-align: center
+;
     }
 
 }
@@ -162,6 +161,7 @@ p {
     position: absolute;
     transition: transform .5s, opacity .5s;
     padding-right: 20px;
+
 }
 
 .nav_toggle i:nth-child(1) {
@@ -179,6 +179,7 @@ p {
 }
 
 .nav {
+
     position: fixed;
     top: 3rem;
     left: 0;
@@ -199,6 +200,7 @@ p {
     z-index: 1000;
     color: white;
     text-align: center;
+
 
 }
 
