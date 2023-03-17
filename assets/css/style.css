@@ -166,38 +166,38 @@ li {
   }
 }
 
-.Latest {
+.Latest-Articles {
   width: 1024px;
 }
 @media screen and (max-width: 767px) {
-  .Latest {
+  .Latest-Articles {
     width: auto;
   }
 }
-.Latest h1 {
+.Latest-Articles h1 {
   text-align: center;
   font-size: 30px;
   margin: 30px auto;
 }
 @media screen and (max-width: 767px) {
-  .Latest h1 {
+  .Latest-Articles h1 {
     margin: 30px auto 0px;
   }
 }
 
-.Latest-box {
+.Latest {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 30px 0px;
 }
 @media screen and (max-width: 767px) {
-  .Latest-box {
+  .Latest {
     display: block;
     margin-top: 0px;
   }
 }
-.Latest-box .box {
+.Latest .Latest-box {
   transition: all 0.3s;
   width: 300px;
   height: 400px;
@@ -205,18 +205,24 @@ li {
   margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
-  .Latest-box .box {
+  .Latest .Latest-box {
     margin: 0px auto 20px;
   }
 }
-.Latest-box .box .box-text {
+.Latest .Latest-box ul {
+  padding: 0;
+}
+.Latest .Latest-box li {
+  padding: 0;
+}
+.Latest .Latest-box .box-text {
   height: 120px;
   margin: 5px 10px 30px;
 }
-.Latest-box .box .box-text p {
+.Latest .Latest-box .box-text p {
   margin: 5px auto 0;
 }
-.Latest-box .box a {
+.Latest .Latest-box a {
   position: relative;
   display: block;
   text-decoration: none;
@@ -224,7 +230,7 @@ li {
   text-align: end;
   margin: 5px 10px 30px;
 }
-.Latest-box .box a::after {
+.Latest .Latest-box a::after {
   content: "";
   position: absolute;
   display: block;
@@ -233,14 +239,22 @@ li {
   height: 7px;
   left: 92%;
 }
-.Latest-box .box a:hover::after {
+.Latest .Latest-box a:hover::after {
   border-bottom: 2px solid black;
   width: 38%;
   height: 7px;
   left: 62%;
 }
 
-.Latest-box .box:hover {
+.more-btn {
+  margin: 20px auto;
+  text-align: center;
+}
+.more-btn:hover {
+  cursor: pointer;
+}
+
+.Latest .Latest-box:hover {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
   border-color: transparent;
 }
