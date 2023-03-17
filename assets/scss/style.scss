@@ -86,6 +86,11 @@ li {
 .box {
     position: relative;
     margin: 0 auto;
+   
+
+    @include sp {
+        text-align: center;
+    }
 }
 
 

@@ -54,6 +54,11 @@ li {
   position: relative;
   margin: 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .box {
+    text-align: center;
+  }
+}
 
 .logo1 {
   position: absolute;
