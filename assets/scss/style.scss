@@ -1,8 +1,8 @@
 * {
-  max-width: 1152px;
-  margin: 0 auto;
-  //  text-align: center;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    max-width: 1152px;
+    margin: 0 auto;
+    // text-align: center;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 // レスポンシブ設定対応
@@ -10,15 +10,15 @@ $pc: 1152px;
 $sp: 767px;
 
 @mixin pc {
-  @media screen and (max-width: ($pc)) {
-    @content;
-  }
+    @media screen and (max-width: ($pc)) {
+        @content;
+    }
 }
 
 @mixin sp {
-  @media screen and (max-width: ($sp)) {
-    @content;
-  }
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
 }
 
 // // レスポンシブ設定対応ここまで
@@ -38,38 +38,62 @@ header {
 }
 
 li {
-  list-style: none;
-  padding: 20px;
+    list-style: none;
+    padding: 20px;
+    
+
+
+    @include sp {
+        // display: block;
+        font-weight: 900;
+        text-decoration: none;
+        margin-left: 100px;
+        // padding: 20px;
+        // position: relative;
+        z-index: 1000;
+
+    }
 }
 
+
+// ul {
+//     @include sp {
+//         position: fixed;
+//     }
+// }
+
 .head-right {
-  display: flex;
-  margin: 0;
+    display: flex;
+    margin: 0;
+
+    @include sp {
+        display: none;
+    }
 }
 
 .container {
-  display: flex;
-  justify-content: end;
-  margin-right: 20px;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
 
 
-  @include sp {
-    display: none;
-  }
+    @include sp {
+        display: none;
+    }
 
 }
 
 .box {
 
-  position: relative;
-  margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
 }
 
 
 .logo1 {
-  position: absolute;
-  top: -60px;
-  left: 15px;
+    position: absolute;
+    top: -60px;
+    left: 15px;
 
 
     @include sp {
@@ -82,34 +106,35 @@ li {
 
 
 .logo2 {
-  position: absolute;
-  bottom: -25px;
-  right: 5px;
+    position: absolute;
+    bottom: -25px;
+    right: 5px;
 
 
-  @include sp {
-    width: 50%;
-    top: 280px;
-    right: 290px;
-  }
+    @include sp {
+        width: 50%;
+        top: 280px;
+        right: 290px;
+    }
 }
 
 .pic {
-  margin-left: 50px;
+    margin-left: 50px;
 
-  @include sp {
-    margin: 0;
-    width: 100%;
-  }
+    @include sp {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 
 p {
-  @include sp {
-    text-align: center;
-  }
+    @include sp {
+        text-align: center;
+    }
 
 }
+
 
 
 // ハンバーガー線ここから
@@ -122,7 +147,8 @@ p {
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
-    z-index: 1;
+    // z-index: 1;
+    margin-right: 50px;
 
 }
 
@@ -135,42 +161,44 @@ p {
     background-color: black;
     position: absolute;
     transition: transform .5s, opacity .5s;
-
+    padding-right: 20px;
 }
 
 .nav_toggle i:nth-child(1) {
-  top: 0;
+    top: 0;
 }
 
 .nav_toggle i:nth-child(2) {
-  top: 0;
-  bottom: 0;
-  margin: auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .nav_toggle i:nth-child(3) {
-  bottom: 0;
+    bottom: 0;
 }
 
 .nav {
-  position: fixed;
-  top: 3rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s, visibility .5s;
-  text-align: center;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    text-align: center;
 }
 
 .nav.show {
 
-    opacity: 0.5;
+    opacity: 50;
     visibility: visible;
-     background: rgba(51, 51, 51, 0.7);
-    
+    background: rgba(51, 51, 51, 0.7);
+    z-index: 1000;
+    color: white;
+    text-align: center;
 
 }
 
@@ -186,24 +214,17 @@ p {
     transform: translateY(-12px) rotate(45deg);
 }
 
-.nav_menu_li{
-
-    @include sp {
-        color: white;
-        z-index: 100;
-    }
-    
-}
 
 
 .burgar {
-  display: none;
+    display: none;
 
-  @include sp {
-    display: block;
-    text-align: right;
-    width: 100%;
-  }
+    @include sp {
+        display: block;
+        text-align: right;
+        width: 100%;
+        z-index: 1;
+    }
 
 }
 
@@ -215,78 +236,80 @@ p {
 // ===== Latest Articles ===============
 
 .Latest {
-  width: 90%;
+    width: 90%;
 
-  h1 {
-    text-align: center;
-    font-size: 30px;
-    margin: 30px auto;
-  }
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        margin: 30px auto;
+    }
 }
 
 .Latest-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0px;
 
-  .box {
-    transition: all .3s;
-    width: 300px;
-    height: 400px;
-    margin-top: 30px;
+    .box {
+        transition: all .3s;
+        width: 300px;
+        height: 400px;
+        margin-top: 30px;
 
-    .box-text {
-      height: 120px;
-      margin: 5px 10px 30px;
+        .box-text {
+            height: 120px;
+            margin: 5px 10px 30px;
 
-      p {
-        margin: 5px auto 0;
-      }
+            p {
+                margin: 5px auto 0;
+            }
+        }
+
+        a {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-align: end;
+            margin: 5px 10px 30px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                border-bottom: 2px solid black;
+                width: 10%;
+                height: 7px;
+                left: 90%;
+            }
+
+            &:hover::after {
+                border-bottom: 2px solid black;
+                width: 38%;
+                height: 7px;
+                left: 62%;
+            }
+        }
     }
-
-    a {
-      position: relative;
-      display: block;
-      text-decoration: none;
-      color: black;
-      text-align: end;
-      margin: 5px 10px 30px;
-
-      &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        border-bottom: 2px solid black;
-        width: 10%;
-        height: 7px;
-        left: 90%;
-      }
-
-      &:hover::after {
-        border-bottom: 2px solid black;
-        width: 38%;
-        height: 7px;
-        left: 62%;
-      }
-    }
-  }
 }
 
 .Latest-box .box:hover {
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
-  border-color: transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
+    border-color: transparent;
 }
 
 // ===== フッター ===============
 .footer {
-  margin-top: 150px;
-  text-align: center;
-  background-color: black;
-  color: white;
+    margin-top: 150px;
+    text-align: center;
+    background-color: black;
+    color: white;
 
-  p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+
+
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }

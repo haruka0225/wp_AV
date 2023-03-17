@@ -1,5 +1,8 @@
 <footer class="footer">
+
   <p>Copyright <small>&copy;</small> Shinohara.ALL RIGHTS RESERVED.</p>
+  
+
 </footer>
 <!-- body終了タグの直前 -->
 <?php wp_footer(); ?> 

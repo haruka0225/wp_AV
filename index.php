@@ -9,7 +9,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_2_pc.png" alt="" class="pic">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_3_pc.png" alt="" class="pic">
       </div>
-      
+
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" alt="" class="logo2">
     </div>
 
@@ -34,10 +34,7 @@
               </div>
               <a href="">READ MORE</a>
           </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> 1c06939f919c834458bbf5fd8e9bd7da205c18d2
           <?php
             endwhile;
           else :
@@ -50,9 +47,6 @@
         </div>
     </section>
   </main>
-<<<<<<< HEAD
-=======
 
->>>>>>> 1c06939f919c834458bbf5fd8e9bd7da205c18d2
 <!-- フッター読み込み -->
 <?php get_footer(); ?>
