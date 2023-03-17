@@ -47,7 +47,7 @@ li {
         // display: block;
         font-weight: 900;
         text-decoration: none;
-        margin-left: 100px;
+        // margin-left: 100px;
         // padding: 20px;
         // position: relative;
         z-index: 1000;
@@ -55,12 +55,10 @@ li {
     }
 }
 
-
-// ul {
-//     @include sp {
-//         position: fixed;
-//     }
+// .link {
+//     text-decoration: none;
 // }
+
 
 .head-right {
     display: flex;
@@ -86,7 +84,7 @@ li {
 .box {
     position: relative;
     margin: 0 auto;
-   
+
 
     @include sp {
         text-align: center;
@@ -153,7 +151,7 @@ p {
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
-    // z-index: 1;
+    z-index: 1001;
     margin-right: 50px;
 
 }
@@ -209,6 +207,7 @@ p {
     color: white;
     text-align: center;
 
+
 }
 
 
@@ -223,6 +222,17 @@ p {
 
 .nav_toggle.show i:nth-child(3) {
     transform: translateY(-12px) rotate(45deg);
+}
+
+.nav_menu_li a {
+    @include sp {
+        outline: none;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        font-size: 30px;
+    }
 }
 
 
