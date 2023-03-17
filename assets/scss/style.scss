@@ -40,14 +40,16 @@ header {
 li {
     list-style: none;
     padding: 20px;
-    
+
 
     @include sp {
-        display: block;
+
+        // display: block;
         font-weight: 900;
         text-decoration: none;
         margin-left: 100px;
-        position: relative;
+        // padding: 20px;
+        // position: relative;
         z-index: 1000;
 
     }
@@ -82,7 +84,6 @@ li {
 }
 
 .box {
-
     position: relative;
     margin: 0 auto;
 }
@@ -95,10 +96,11 @@ li {
 
 
     @include sp {
+
         position: static;
         margin-left: 20px;
-text-align: center
-;
+        text-align: center;
+
     }
 
 }
@@ -178,8 +180,9 @@ p {
     bottom: 0;
 }
 
-.nav {
 
+
+.nav {
     position: fixed;
     top: 3rem;
     left: 0;
@@ -201,8 +204,9 @@ p {
     color: white;
     text-align: center;
 
-
 }
+
+
 
 .nav_toggle.show i:nth-child(1) {
     transform: translateY(10px) rotate(-45deg);
@@ -237,34 +241,86 @@ p {
 
 // ===== Latest Articles ===============
 
-.Latest {
-    width: 90%;
+.Latest-Articles {
+    width: 1024px;
+
+    @include sp {
+        width: auto;
+    }
 
     h1 {
         text-align: center;
         font-size: 30px;
         margin: 30px auto;
+
+        @include sp {
+            margin: 30px auto 0px;
+        }
     }
-}
 
-.Latest-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 30px 0px;
+    .Latest {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 30px 0px;
 
-    .box {
-        transition: all .3s;
-        width: 300px;
-        height: 400px;
-        margin-top: 30px;
+        @include sp {
+            display: block;
+            margin-top: 0px;
+        }
 
-        .box-text {
-            height: 120px;
-            margin: 5px 10px 30px;
+        .Latest-box {
+            transition: all .3s;
+            width: 300px;
+            height: 400px;
+            margin: 0;
+            margin-top: 30px;
 
-            p {
-                margin: 5px auto 0;
+            @include sp {
+                margin: 0px auto 20px;
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            li {
+                padding: 0;
+            }
+
+            .box-text {
+                height: 120px;
+                margin: 5px 10px 30px;
+
+                p {
+                    margin: 5px auto 0;
+                }
+            }
+
+            a {
+                position: relative;
+                display: block;
+                text-decoration: none;
+                color: black;
+                text-align: end;
+                margin: 5px 10px 30px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    border-bottom: 2px solid black;
+                    width: 10%;
+                    height: 7px;
+                    left: 90%;
+                }
+
+                &:hover::after {
+                    border-bottom: 2px solid black;
+                    width: 38%;
+                    height: 7px;
+                    left: 62%;
+                }
             }
         }
 
@@ -281,9 +337,9 @@ p {
                 position: absolute;
                 display: block;
                 border-bottom: 2px solid black;
-                width: 10%;
+                width: 8%;
                 height: 7px;
-                left: 90%;
+                left: 92%;
             }
 
             &:hover::after {
@@ -296,19 +352,32 @@ p {
     }
 }
 
-.Latest-box .box:hover {
+// ===== もっと見るボタン ===============
+.more-btn {
+    margin: 20px auto;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.Latest .Latest-box:hover {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
     border-color: transparent;
 }
 
 // ===== フッター ===============
 .footer {
+    // max-width: initial;
     margin-top: 150px;
     text-align: center;
     background-color: black;
     color: white;
 
-
+    @include sp {
+        margin-top: 10px;
+    }
 
     p {
         padding-top: 20px;

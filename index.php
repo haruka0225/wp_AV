@@ -17,24 +17,27 @@
 
 
   <!----- Latest Articles --------------->
-    <section class="Latest">
+    <section class="Latest-Articles">
       <h1>Latest Articles</h1>
-      <!-- メインループここから -->
-        <div class="Latest-box">
+        <div class="Latest">
+          <!-- メインループここから -->
           <?php
             if (have_posts()) :
               while(have_posts()):
                 the_post();
           ?>
-          <div class="box">
-            <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="post-img">
-              <div class="box-text">
-                <h3><?php the_title(); ?></h3>
-                <p><?php the_content(); ?></p>
-              </div>
-              <a href="">READ MORE</a>
+          <div class="Latest-box">
+            <ul>
+              <li>
+                <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="post-img">
+                  <div class="box-text">
+                    <p><?php the_date(); ?></p>
+                    <p><?php the_title(); ?></p>
+                  </div>
+                  <a href="#">READ MORE</a>
+              </li>
+            </ul>
           </div>
-
           <?php
             endwhile;
           else :
@@ -45,8 +48,8 @@
           <?php endif; ?>
           <!-- メインループここまで -->
         </div>
+        <button class="more-btn">もっと見る</button>
     </section>
   </main>
-
 <!-- フッター読み込み -->
 <?php get_footer(); ?>

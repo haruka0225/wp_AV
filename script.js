@@ -1,7 +1,7 @@
 
 $('.nav_toggle').on('click', function () {
-$('.nav_toggle, .nav').toggleClass('show');
-console.log('nav_toggle');
+  $('.nav_toggle, .nav').toggleClass('show');
+  console.log('nav_toggle');
 });
 
 
@@ -29,3 +29,7 @@ console.log('nav_toggle');
 
   setInterval(changeImage, interval);
 }());
+
+
+// もっと見るボタン -------------------
+
