@@ -1,7 +1,7 @@
 <!-- ヘッダー読み込み -->
 <?php get_header(); ?>
   <main>
-    <div class="box">
+    <div class="box wrapper">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" class="logo1">
 
       <div class="img-box">
@@ -17,7 +17,7 @@
 
 
   <!----- Latest Articles --------------->
-    <section class="Latest-Articles">
+    <section class="Latest-Articles wrapper">
       <h1>Latest Articles</h1>
         <div class="Latest">
           <!-- メインループここから -->
@@ -27,16 +27,12 @@
                 the_post();
           ?>
           <div class="Latest-box">
-            <ul>
-              <li>
-                <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="post-img">
-                  <div class="box-text">
-                    <p><?php the_date(); ?></p>
-                    <p><?php the_title(); ?></p>
-                  </div>
-                  <a href="#">READ MORE</a>
-              </li>
-            </ul>
+            <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="post-img">
+              <div class="box-text">
+                <p><?php the_date(); ?></p>
+                <p><?php the_title(); ?></p>
+              </div>
+              <a href="#">READ MORE</a>
           </div>
           <?php
             endwhile;
