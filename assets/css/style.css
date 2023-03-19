@@ -1,5 +1,5 @@
 @charset "UTF-8";
-* {
+.wrapper {
   max-width: 1152px;
   margin: 0 auto;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -87,7 +87,7 @@ li {
 }
 
 .pic {
-  margin-left: 50px;
+  margin-left: 65px;
 }
 @media screen and (max-width: 767px) {
   .pic {
@@ -292,6 +292,7 @@ li {
 }
 
 .footer {
+  max-width: initial;
   margin-top: 150px;
   text-align: center;
   background-color: black;

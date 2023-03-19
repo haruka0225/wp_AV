@@ -1,7 +1,7 @@
 <!-- ヘッダー読み込み -->
 <?php get_header(); ?>
   <main>
-    <div class="box">
+    <div class="box wrapper">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" class="logo1">
 
       <div class="img-box">
@@ -17,7 +17,7 @@
 
 
   <!----- Latest Articles --------------->
-    <section class="Latest-Articles">
+    <section class="Latest-Articles wrapper">
       <h1>Latest Articles</h1>
         <div class="Latest">
           <!-- メインループここから -->

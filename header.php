@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container wrapper">
       <div class="head-right">
         <li>menu01</li>
         <li>menu02</li>

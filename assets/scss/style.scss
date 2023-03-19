@@ -1,9 +1,15 @@
-* {
-    max-width: 1152px;
-    margin: 0 auto;
-    // text-align: center;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+.wrapper{
+  max-width: 1152px;
+  margin: 0 auto;
+  // text-align: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
+// * {
+//     max-width: 1152px;
+//     margin: 0 auto;
+//     // text-align: center;
+//     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+// }
 
 // レスポンシブ設定対応
 $pc: 1152px;
@@ -124,7 +130,7 @@ li {
 }
 
 .pic {
-    margin-left: 50px;
+    margin-left: 65px;
 
     @include sp {
         margin: 0;
@@ -347,7 +353,7 @@ p {
 
 // ===== フッター ===============
 .footer {
-    // max-width: initial;
+    max-width: initial;
     margin-top: 150px;
     text-align: center;
     background-color: black;
