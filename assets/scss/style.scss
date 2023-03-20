@@ -62,9 +62,6 @@ li {
     }
 }
 
-// .link {
-//     text-decoration: none;
-// }
 
 
 .head-right {
@@ -91,6 +88,8 @@ li {
 .box {
     position: relative;
     margin: 0 auto;
+    z-index: 2;
+
 
     @include sp {
         text-align: center;
@@ -100,8 +99,9 @@ li {
 
 .logo1 {
     position: absolute;
-    top: -60px;
-    left: 15px;
+    top: -100px;
+    left: -60px;
+    z-index: 100;
 
 
     @include sp {
@@ -141,6 +141,7 @@ li {
 p {
     @include sp {
         text-align: center;
+        width: 150px;
     }
 
 }

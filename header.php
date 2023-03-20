@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
   <!-- ワードプレスのheadタグ挿入。head終了タグの直前に記載 -->
   <?php wp_head(); ?>
+  
 </head>
 <body>
   <header>
