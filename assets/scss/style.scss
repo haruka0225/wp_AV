@@ -221,71 +221,57 @@ p {
 
 
 // ===== Latest Articles ===============
-
 .Latest-Articles {
   margin: 0 auto;
-
   @include sp {
     width: 100%;
   }
-
   h1 {
     text-align: center;
     font-size: 30px;
     margin: 30px auto;
-
     @include sp {
       margin: 30px auto 0px;
     }
   }
-
   .Latest {
     width: 88.89%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 30px auto;
-
     @include sp {
       display: block;
       margin-top: 0px;
     }
-
     .Latest-box {
       transition: all .3s;
       width: 30%;
       height: 60%;
       margin: 0;
       margin-top: 30px;
-
       @include sp {
         width: auto;
         height: 60%;
         margin: 0px 50px 20px;
       }
-
       .Latest-img {
         width: 100%;
       }
-
       .box-text {
         height: 120px;
         margin: 5px 10px 0px;
-
         @include sp {
           text-align: initial;
         }
-
         p {
           width: auto;
           margin: 5px auto 0;
-
           @include sp {
             text-align: left;
           }
         }
       }
-
       a {
         position: relative;
         display: block;
@@ -293,10 +279,11 @@ p {
         color: black;
         text-align: end;
         margin: 5px 10px 30px;
-        padding-bottom: 20px;
-
+        @include sp {
+          padding-bottom: 20px;
+        }
         &::after {
-          content: '';
+          content: ‘’;
           position: absolute;
           display: block;
           border-bottom: 2px solid black;
@@ -304,50 +291,62 @@ p {
           height: 7px;
           left: 93%;
         }
-
         &:hover::after {
           border-bottom: 2px solid black;
-          width: 38%;
-          left: 62%;
-
+          width: 35%;
+          left: 65%;
+          transition: .3s all;
           @include sp {
             border-bottom: 2px solid black;
-            width: 38%;
-            left: 62%;
+            width: 27%;
+            left: 73%;
           }
+          // ----------------------------------------------
+          @media screen and (max-width: (700px)) {
+            border-bottom: 2px solid black;
+            width: 24%;
+            left: 76%;
+          }
+          @media screen and (max-width: (600px)) {
+            border-bottom: 2px solid black;
+            width: 30%;
+            left: 70%;
+          }
+          @media screen and (max-width: (500px)) {
+            border-bottom: 2px solid black;
+            width: 40%;
+            left: 60%;
+          }
+          // ----------------------------------------------
         }
       }
-
-      // @include sp {
-      //   width: auto;
-      // }
     }
   }
 }
-
 // ======== もっと見るボタン ===============
 .more-btn {
   text-align: center;
-
   button {
     border: none;
     background: transparent;
     font-size: 18px;
-
     &:hover {
       cursor: pointer;
       border-bottom: 1px solid black;
     }
+    @include sp {
+      font-size: 15px;
+    }
   }
-
-
+  @include sp {
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
 }
-
 .Latest .Latest-box:hover {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1);
   border-color: transparent;
 }
-
 // ======== フッター ==================
 .footer {
   max-width: initial;
@@ -355,13 +354,16 @@ p {
   text-align: center;
   background-color: black;
   color: white;
-
-  @include sp {
-    margin-top: 10px;
-  }
-
+  margin-bottom: 0;
   p {
     padding-top: 20px;
     padding-bottom: 20px;
+    @include sp {
+      width: auto;
+    }
+  }
+  @include sp {
+    margin-top: 10px;
+    width: auto;
   }
 }
