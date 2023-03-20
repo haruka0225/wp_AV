@@ -7,7 +7,7 @@ $('.nav_toggle').on('click', function () {
 
 
 
-// // フェードイン
+// フェードイン
 (function () {
 //   // 設定
   var interval = 3000; // 切り替わりの間隔（ミリ秒）
