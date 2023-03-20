@@ -14,7 +14,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/visual_text_pc.png" alt="" class="logo2">
     </div>
 
-    <p>進化し続ける「街」アメリカンビレッジマガジン</p>
+    <p class="wrapper">進化し続ける「街」アメリカンビレッジマガジン</p>
 
 
   <!----- Latest Articles --------------->
@@ -28,12 +28,12 @@
                 the_post();
           ?>
           <div class="Latest-box">
-            <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="post-img">
+            <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="post-img">
               <div class="box-text">
                 <p><?php the_date(); ?></p>
                 <p><?php the_title(); ?></p>
               </div>
-              <a href="#">READ MORE</a>
+              <a class="read-more" href="#">READ MORE</a>
           </div>
           <?php
             endwhile;

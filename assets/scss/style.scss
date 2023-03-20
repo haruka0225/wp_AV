@@ -28,7 +28,7 @@ $sp: 767px;
     }
 }
 
-// // レスポンシブ設定対応ここまで
+ // レスポンシブ設定対応ここまで
 
 
 header {
@@ -86,10 +86,10 @@ li {
 }
 
 .box {
+
     position: relative;
     margin: 0 auto;
     z-index: 2;
-
 
     @include sp {
         text-align: center;
@@ -98,10 +98,12 @@ li {
 
 
 .logo1 {
+
     position: absolute;
     top: -100px;
     left: -60px;
     z-index: 100;
+
 
 
     @include sp {
@@ -143,6 +145,7 @@ p {
         text-align: center;
         width: 150px;
     }
+
 
 }
 
@@ -264,10 +267,10 @@ p {
 // ===== Latest Articles ===============
 
 .Latest-Articles {
-    width: 1024px;
+    margin: 0 auto;
 
     @include sp {
-        width: auto;
+        width: 100%;
     }
 
     h1 {
@@ -281,10 +284,11 @@ p {
     }
 
     .Latest {
+        width: 88.89%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 30px 0px;
+        margin: 30px auto;
 
         @include sp {
             display: block;
@@ -293,21 +297,35 @@ p {
 
         .Latest-box {
             transition: all .3s;
-            width: 300px;
-            height: 400px;
+            width: 30%;
+            height: 60%;
             margin: 0;
             margin-top: 30px;
 
             @include sp {
-                margin: 0px auto 20px;
+                width: auto;
+                height: 60%;
+                margin: 0px 100px 20px;
+            }
+
+            .Latest-img {
+                width: 100%;
             }
 
             .box-text {
                 height: 120px;
-                margin: 5px 10px 30px;
+                margin: 5px 10px 0px;
+
+                @include sp {
+                    text-align: initial;
+                }
 
                 p {
                     margin: 5px auto 0;
+
+                    @include sp {
+                        text-align: initial;
+                    }
                 }
             }
 
@@ -318,52 +336,33 @@ p {
                 color: black;
                 text-align: end;
                 margin: 5px 10px 30px;
+                padding-bottom: 20px;
 
                 &::after {
                     content: '';
                     position: absolute;
                     display: block;
                     border-bottom: 2px solid black;
-                    width: 10%;
+                    width: 7%;
                     height: 7px;
-                    left: 90%;
+                    left: 93%;
                 }
 
                 &:hover::after {
                     border-bottom: 2px solid black;
                     width: 38%;
-                    height: 7px;
                     left: 62%;
                 }
             }
         }
 
-        a {
-            position: relative;
-            display: block;
-            text-decoration: none;
-            color: black;
-            text-align: end;
-            margin: 5px 10px 30px;
-
-            &::after {
-                content: '';
-                position: absolute;
-                display: block;
-                border-bottom: 2px solid black;
-                width: 8%;
-                height: 7px;
-                left: 92%;
-            }
-
-            @include sp {
-                width: auto;
-            }
+        @include sp {
+            width: auto;
         }
     }
 }
 
-// ===== もっと見るボタン ===============
+// ======== もっと見るボタン ===============
 .more-btn {
     margin: 20px auto;
     text-align: center;
@@ -378,7 +377,7 @@ p {
     border-color: transparent;
 }
 
-// ===== フッター ===============
+// ======== フッター ==================
 .footer {
     max-width: initial;
     margin-top: 150px;
