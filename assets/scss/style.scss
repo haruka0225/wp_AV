@@ -91,8 +91,14 @@ li {
   margin: 0 auto;
   z-index: 2;
 
+
   @include sp {
     text-align: center;
+  }
+
+  .img-box {
+    width: 88.89%;
+    margin: 0 auto;
   }
 }
 
@@ -118,17 +124,30 @@ li {
 
 
 .logo2 {
+  display: block;
   position: absolute;
   bottom: -25px;
   right: 5px;
 
 
   @include sp {
-    width: 50%;
-    top: 280px;
-    right: 290px;
+    // display: none;
+    // width: 50%;
+    // top: 280px;
+    // right: 290px;
   }
 }
+
+// .logo2sp {
+//   display: none;
+
+//   @include sp {
+//     display: block;
+//     width: 50%;
+//     top: 280px;
+//     right: 290px;
+//   }
+// }
 
 .pic {
   margin-left: 65px;
@@ -377,13 +396,14 @@ p {
     border: none;
     background: transparent;
     font-size: 18px;
+
     &:hover {
       cursor: pointer;
       border-bottom: 1px solid black;
     }
   }
 
-  
+
 }
 
 .Latest .Latest-box:hover {

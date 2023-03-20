@@ -14,5 +14,6 @@ register_nav_menus( array(
     'side'   => 'サイド',
     'footer' => 'フッター'
  ) );
+ 
 
 ?>
