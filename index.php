@@ -5,7 +5,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" class="logo1">
 
       <div class="img-box">
-      <?php echo do_shortcode('[metaslider id="14"]'); ?> 
+      <?php echo do_shortcode('[metaslider id="38"]'); ?>
       <!-- <img src="<?php //echo get_template_directory_uri(); ?>/assets/img/visual_1_pc.png" alt="" class="pic">
       <img src="<?php //echo get_template_directory_uri(); ?>/assets/img/visual_2_pc.png" alt="" class="pic">
       <img src="<?php //echo get_template_directory_uri(); ?>/assets/img/visual_3_pc.png" alt="" class="pic">   -->
@@ -45,7 +45,10 @@
           <?php endif; ?>
           <!-- メインループここまで -->
         </div>
-        <button class="more-btn">もっと見る</button>
+        <div class="more-btn">
+          <button><i class="fa-solid fa-angle-down"></i> もっと見る <i class="fa-solid fa-angle-down"></i></button>
+        </div>
+        
     </section>
   </main>
 <!-- フッター読み込み -->

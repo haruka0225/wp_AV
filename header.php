@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/reset.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/13867740db.js" crossorigin="anonymous"></script>
   <!-- ワードプレスのheadタグ挿入。head終了タグの直前に記載 -->
   <?php wp_head(); ?>
   

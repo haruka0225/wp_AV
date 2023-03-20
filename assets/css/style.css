@@ -239,7 +239,7 @@ li {
   .Latest-Articles .Latest .Latest-box {
     width: auto;
     height: 60%;
-    margin: 0px 100px 20px;
+    margin: 0px 50px 20px;
   }
 }
 .Latest-Articles .Latest .Latest-box .Latest-img {
@@ -255,11 +255,12 @@ li {
   }
 }
 .Latest-Articles .Latest .Latest-box .box-text p {
+  width: auto;
   margin: 5px auto 0;
 }
 @media screen and (max-width: 767px) {
   .Latest-Articles .Latest .Latest-box .box-text p {
-    text-align: initial;
+    text-align: left;
   }
 }
 .Latest-Articles .Latest .Latest-box a {
@@ -286,17 +287,24 @@ li {
   left: 62%;
 }
 @media screen and (max-width: 767px) {
-  .Latest-Articles .Latest {
-    width: auto;
+  .Latest-Articles .Latest .Latest-box a:hover::after {
+    border-bottom: 2px solid black;
+    width: 38%;
+    left: 62%;
   }
 }
 
 .more-btn {
-  margin: 20px auto;
   text-align: center;
 }
-.more-btn:hover {
+.more-btn button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+.more-btn button:hover {
   cursor: pointer;
+  border-bottom: 1px solid black;
 }
 
 .Latest .Latest-box:hover {
