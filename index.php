@@ -54,8 +54,6 @@
     <button class="more-btn">もっと見る</button>
   </section>
 
-  <img src="<?php echo do_shortcode('[metaslider id="14"]'); ?>
-  
 </main>
 <!-- フッター読み込み -->
 <?php get_footer(); ?>
