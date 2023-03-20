@@ -1,74 +1,43 @@
+@charset "UTF-8";
+
 .wrapper {
   max-width: 1152px;
   margin: 0 auto;
-  // text-align: center;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-// * {
-//     max-width: 1152px;
-//     margin: 0 auto;
-//     // text-align: center;
-//     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-// }
-
-// レスポンシブ設定対応
-$pc: 1152px;
-$sp: 767px;
-
-@mixin pc {
-  @media screen and (max-width: ($pc)) {
-    @content;
-  }
-}
-
-@mixin sp {
-  @media screen and (max-width: ($sp)) {
-    @content;
-  }
-}
-
-// レスポンシブ設定対応ここまで
-
-
 header {
-
   height: 100px;
   position: relative;
   z-index: 100%;
+}
 
-
-  @include sp {
+@media screen and (max-width: 767px) {
+  header {
     height: 50px;
   }
-
 }
 
 li {
   list-style: none;
   padding: 20px;
-
-
-  @include sp {
-
-    // display: block;
-    font-weight: 900;
-    text-decoration: none;
-    // margin-left: 100px;
-    // padding: 20px;
-    // position: relative;
-    z-index: 1000;
-
-  }
 }
 
-
+@media screen and (max-width: 767px) {
+  li {
+    font-weight: 900;
+    text-decoration: none;
+    z-index: 1000;
+  }
+}
 
 .head-right {
   display: flex;
   margin: 0;
+}
 
-  @include sp {
+@media screen and (max-width: 767px) {
+  .head-right {
     display: none;
   }
 }
@@ -77,82 +46,65 @@ li {
   display: flex;
   justify-content: end;
   margin-right: 20px;
+}
 
-
-  @include sp {
+@media screen and (max-width: 767px) {
+  .container {
     display: none;
   }
-
 }
 
 .box {
-
   position: relative;
   margin: 0 auto;
   z-index: 2;
+}
 
-
-  @include sp {
+@media screen and (max-width: 767px) {
+  .box {
     text-align: center;
-  }
-
-  .img-box {
-    width: 88.89%;
-    margin: 0 auto;
   }
 }
 
-
 .logo1 {
-
   position: absolute;
   top: -100px;
   left: -60px;
   z-index: 100;
+}
 
-
-
-  @include sp {
-
+@media screen and (max-width: 767px) {
+  .logo1 {
     position: static;
     margin-left: 20px;
     text-align: center;
-
   }
-
 }
 
-
 .logo2 {
-  display: block;
   position: absolute;
   bottom: -25px;
   right: 5px;
+  z-index: 100;
+  
+}
 
 
-  @include sp {
-    // display: none;
-    // width: 50%;
-    // top: 280px;
-    // right: 290px;
+@media screen and (max-width: 767px) {
+  .logo2 {
+    width: 50%;
+    top: 280px;
+    right: 290px;
+
   }
 }
 
-// .logo2sp {
-//   display: none;
-
-//   @include sp {
-//     display: block;
-//     width: 50%;
-//     top: 280px;
-//     right: 290px;
-//   }
-// }
 
 .pic {
   margin-left: 65px;
 
-  @include sp {
+  @media screen and (max-width: 767px) {
+
     margin: 0;
     width: 100%;
   }
@@ -160,19 +112,16 @@ li {
 
 
 p {
-  @include sp {
+
+  @media screen and (max-width: 767px) {
     text-align: center;
-    width: 150px;
+    width: 200px;
   }
-
-
 }
 
+// ハンバーガーここから
 
-
-// ハンバーガー線ここから
 .nav_toggle {
-
   display: block;
   position: absolute;
   width: 1.75rem;
@@ -182,20 +131,16 @@ p {
   transform: translate(0, -50%);
   z-index: 1001;
   margin-right: 50px;
-
 }
 
-
 .nav_toggle i {
-
   display: block;
   width: 100%;
   height: 2px;
   background-color: black;
   position: absolute;
-  transition: transform .5s, opacity .5s;
+  transition: transform 0.5s, opacity 0.5s;
   padding-right: 20px;
-
 }
 
 .nav_toggle i:nth-child(1) {
@@ -212,8 +157,6 @@ p {
   bottom: 0;
 }
 
-
-
 .nav {
   position: fixed;
   top: 3rem;
@@ -223,23 +166,18 @@ p {
   padding: 1rem;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .5s, visibility .5s;
+  transition: opacity 0.5s, visibility 0.5s;
   text-align: center;
 }
 
 .nav.show {
-
   opacity: 50;
   visibility: visible;
   background: rgba(51, 51, 51, 0.7);
   z-index: 1000;
   color: white;
   text-align: center;
-
-
 }
-
-
 
 .nav_toggle.show i:nth-child(1) {
   transform: translateY(10px) rotate(-45deg);
@@ -253,8 +191,8 @@ p {
   transform: translateY(-12px) rotate(45deg);
 }
 
-.nav_menu_li a {
-  @include sp {
+@media screen and (max-width: 767px) {
+  .nav_menu_li a {
     outline: none;
     text-decoration: none;
     color: white;
@@ -264,18 +202,17 @@ p {
   }
 }
 
-
-
 .burgar {
   display: none;
+}
 
-  @include sp {
+@media screen and (max-width: 767px) {
+  .burgar {
     display: block;
     text-align: right;
     width: 100%;
     z-index: 1;
   }
-
 }
 
 
