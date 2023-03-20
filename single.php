@@ -2,35 +2,36 @@
 <?php get_header(); ?>
 <main>
   <!----- Latest Articles --------------->
-  <section class="Latest">
-    <h1>Latest Articles</h1>
-    <!------- メインループ ------->
-    <div>
-      <?php
-      if (have_posts()) :
-        while (have_posts()) :
-          the_post();
-      ?>
+  <section class="Latest-Articles wrapper">
+      <h1>Latest Articles</h1>
+        <div class="Latest">
+          <!-- メインループここから -->
+          <?php
+            if (have_posts()) :
+              while(have_posts()):
+                the_post();
+          ?>
+          <div class="Latest-box">
+            <img class="Latest-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="post-img">
               <div class="box-text">
                 <p><?php the_date(); ?></p>
                 <p><?php the_title(); ?></p>
-                <a href="#">READ MORE</a>
+                
               </div>
-            </div>
+              <a href="#">READ MORE</a>
           </div>
-        <?php
-        endwhile;
-      else :
-        ?>
-        <section class="conteiner-weap" id="htmlcss">
-          <h2 class="subtitle">表示する記事がりません</h2>
-        </section>
-      <?php endif; ?>
-    </div>
-    <?php if (5 < count_user_posttype(get_the_author_meta('ID'),"post")){ ?>
-    <p class=".more_btn"><?php the_author_posts_link(); ?></p>
-    <?php } ?>
-  </section>
+          <?php
+            endwhile;
+          else :
+          ?>
+          <section class="container-wrap" id="htmlcss">
+            <h2 class="subtitle">表示する記事がありません</h2>
+          </section>
+          <?php endif; ?>
+          <!-- メインループここまで -->
+        </div>
+        <button class="more-btn">もっと見る</button>
+    </section>
   <!------- メインループここまで ------->
 </main>
 <!-- フッター読み込み -->

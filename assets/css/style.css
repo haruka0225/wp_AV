@@ -195,11 +195,11 @@ li {
 }
 
 .Latest-Articles {
-  width: 1024px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
   .Latest-Articles {
-    width: auto;
+    width: 100%;
   }
 }
 .Latest-Articles h1 {
@@ -213,10 +213,11 @@ li {
   }
 }
 .Latest-Articles .Latest {
+  width: 88.89%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 30px 0px;
+  margin: 30px auto;
 }
 @media screen and (max-width: 767px) {
   .Latest-Articles .Latest {
@@ -226,22 +227,37 @@ li {
 }
 .Latest-Articles .Latest .Latest-box {
   transition: all 0.3s;
-  width: 300px;
-  height: 400px;
+  width: 30%;
+  height: 60%;
   margin: 0;
   margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
   .Latest-Articles .Latest .Latest-box {
-    margin: 0px auto 20px;
+    width: auto;
+    height: 60%;
+    margin: 0px 100px 20px;
   }
+}
+.Latest-Articles .Latest .Latest-box .Latest-img {
+  width: 100%;
 }
 .Latest-Articles .Latest .Latest-box .box-text {
   height: 120px;
-  margin: 5px 10px 30px;
+  margin: 5px 10px 0px;
+}
+@media screen and (max-width: 767px) {
+  .Latest-Articles .Latest .Latest-box .box-text {
+    text-align: initial;
+  }
 }
 .Latest-Articles .Latest .Latest-box .box-text p {
   margin: 5px auto 0;
+}
+@media screen and (max-width: 767px) {
+  .Latest-Articles .Latest .Latest-box .box-text p {
+    text-align: initial;
+  }
 }
 .Latest-Articles .Latest .Latest-box a {
   position: relative;
@@ -250,41 +266,24 @@ li {
   color: black;
   text-align: end;
   margin: 5px 10px 30px;
+  padding-bottom: 20px;
 }
 .Latest-Articles .Latest .Latest-box a::after {
   content: "";
   position: absolute;
   display: block;
   border-bottom: 2px solid black;
-  width: 10%;
+  width: 7%;
   height: 7px;
-  left: 90%;
+  left: 93%;
 }
 .Latest-Articles .Latest .Latest-box a:hover::after {
   border-bottom: 2px solid black;
   width: 38%;
-  height: 7px;
   left: 62%;
 }
-.Latest-Articles .Latest a {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  color: black;
-  text-align: end;
-  margin: 5px 10px 30px;
-}
-.Latest-Articles .Latest a::after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-bottom: 2px solid black;
-  width: 8%;
-  height: 7px;
-  left: 92%;
-}
 @media screen and (max-width: 767px) {
-  .Latest-Articles .Latest a {
+  .Latest-Articles .Latest {
     width: auto;
   }
 }
